@@ -94,13 +94,11 @@ def prioritize_genes(gene_set, pthres = 0.05, qthres = 0.05, null_thres=0.05, ft
 
 
 def main():
-    f = sys.argv[1]
-    
-    if len(sys.argv) < 2 or not os.path.exists(f):
+    if len(sys.argv) < 2 or not os.path.exists(sys.argv[1]):
         sys.stderr.write('Please input a gene set\n')
         return 1
     
-    prioritize_genes(f)
+    prioritize_genes(sys.argv[1])
     
     return 0
 
