@@ -1,0 +1,11 @@
+build
+dist
+git_*
+.*project
+.settings
+*.egg-info
+__pycache__
+*.pyc
+*~
+data_open
+._data_open
