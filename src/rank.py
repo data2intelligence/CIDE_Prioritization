@@ -1,11 +1,8 @@
 #!/usr/bin/env python
-import os, sys, pathlib, re, pandas, numpy, warnings
-import statsmodels.api as sm
+import os, sys, pathlib, pandas
 
 from scipy import stats
-from glob import glob
 from statsmodels.stats.multitest import multipletests
-from statsmodels.tools.sm_exceptions import MissingDataError
 
 base_path = pathlib.Path(__file__).parent.absolute()
 base_path = os.path.dirname(base_path)
