@@ -7,5 +7,4 @@ git_*
 __pycache__
 *.pyc
 *~
-data_open
-._data_open
+*.rank*xlsx
